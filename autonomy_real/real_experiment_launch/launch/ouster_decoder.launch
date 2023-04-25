@@ -13,7 +13,7 @@
   <arg name="viz" default="false" doc="whether to run a rviz"/>
   <arg name="rviz_config" default="-d $(find ouster_ros)/viz.rviz" doc="optional rviz config file"/>
   <arg name="tf_prefix" default="" doc="namespace for tf transforms"/>
-  <arg name="driver_ns" default="os_node"/>
+  <arg name="driver_ns" default="os_node"/> <!-- ouster or os_node -->
 
   <!-- <include file="$(find ouster_decoder)/launch/driver.launch"></include> -->
   <node pkg="ouster_decoder" type="ouster_driver" name="$(arg driver_ns)" output="screen" required="true">
